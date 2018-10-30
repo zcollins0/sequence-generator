@@ -7,8 +7,9 @@ generic(
 );
 port(
   inputs: in std_logic_vector(3 downto 0);
-  load_gen, clock, reset: in std_logic;
-  outputs, fs: out std_logic_vector(3 downto 0)
+  load_gen, clock, reset, track: in std_logic;
+  outputs, fs: out std_logic_vector(3 downto 0);
+  track_out: out std_logic
 );
 end entity rishi;
 
@@ -35,8 +36,6 @@ architecture rishi_behave of rishi is
   type STD_LOGIC_VECTOR_ARRAY is array(0 to (n-1)) of std_logic_vector(3 downto 0);
   -- common bus holds the output/pipe back to beginning signal
   signal common_bus: std_logic_vector(3 downto 0);
-  -- the input "track" signal, should be tied to VDD
-  signal track: std_logic := '1';
   -- the clock signal for the flip flops used to track which output
   --   to pipe to the common bus
   signal gclock: std_logic;
@@ -48,6 +47,8 @@ architecture rishi_behave of rishi is
   signal output_buf: std_logic_vector(3 downto 0);
   -- output signal from preprocessor
   signal preprocess_out: std_logic_vector(3 downto 0);
+  -- output tracking signal buffer, for testing
+  signal track_out_buf: std_logic;
 
 begin
 
@@ -58,7 +59,7 @@ begin
 
     UPPER_BIT: if i=(n-1) generate
       MS: slice port map(O(i-1), ts(i-1), '0', clock, gclock, reset,
-            output_buf, common_bus, ts(i));
+            output_buf, common_bus, track_out_buf);
     end generate UPPER_BIT;
 
     LOWER_BIT: if i=0 generate
@@ -73,10 +74,11 @@ begin
 
   end generate GEN_SLICES;
 
-  rishi_process: process(common_bus, output_buf)
+  rishi_process: process(common_bus, output_buf, track_out_buf)
   begin
     fs <= common_bus;
     outputs <= output_buf;
+    track_out <= track_out_buf;
   end process rishi_process;
 
 end rishi_behave;

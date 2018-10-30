@@ -1,0 +1,105 @@
+# Loading project RISHI
+# Compile of dff_tb.vhd was successful.
+vsim work.dff_tb
+# vsim work.dff_tb 
+# Start time: 16:22:19 on Oct 30,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.dff_tb(dff_tb_behave)
+# Loading work.dff(dff_behave)
+add wave -position insertpoint  \
+sim:/dff_tb/t_d \
+sim:/dff_tb/t_clock \
+sim:/dff_tb/t_q
+run -all
+quit -sim
+# End time: 16:23:00 on Oct 30,2018, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 0
+# Compile of dff_tb.vhd was successful.
+# Compile of dff.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of slice.vhd was successful.
+# Compile of tgate.vhd was successful.
+# Compile of andgate.vhd was successful.
+# Compile of norgate.vhd was successful.
+# Compile of slice_tb.vhd was successful.
+# Compile of tgate_tb.vhd was successful.
+# Compile of rishi.vhd was successful.
+# Compile of preprocess.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of andgate_tb.vhd was successful.
+# Compile of dff_tb.vhd was successful.
+# Compile of norgate_tb.vhd was successful.
+# Compile of preprocess_tb.vhd failed with 1 errors.
+# Compile of rishi_tb.vhd failed with 1 errors.
+# Compile of inverter_tb.vhd was successful.
+# Compile of mux_tb.vhd failed with 1 errors.
+# 18 compiles, 3 failed with 3 errors.
+# Compile of mux_tb.vhd was successful.
+vsim work.mux_tb
+# vsim work.mux_tb 
+# Start time: 16:31:23 on Oct 30,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux_tb(mux_tb_behave)
+# Loading work.mux(mux_behave)
+add wave -position insertpoint  \
+sim:/mux_tb/t_a \
+sim:/mux_tb/t_b \
+sim:/mux_tb/t_gate \
+sim:/mux_tb/t_out
+run -all
+quit -sim
+# End time: 16:32:06 on Oct 30,2018, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 0
+# Compile of preprocess_tb.vhd was successful.
+# Compile of preprocess_tb.vhd was successful.
+vsim work.preprocess_tb
+# vsim work.preprocess_tb 
+# Start time: 16:46:01 on Oct 30,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.preprocess_tb(preprocess_tb_behave)
+# Loading work.preprocess(preprocess_behave)
+# Loading work.inverter(inverter_behave)
+# Loading work.norgate(norgate_behave)
+# Loading work.mux(mux_behave)
+add wave -position insertpoint  \
+sim:/preprocess_tb/t_inputs \
+sim:/preprocess_tb/t_fs \
+sim:/preprocess_tb/t_outputs \
+sim:/preprocess_tb/t_load_gen \
+sim:/preprocess_tb/t_clock \
+sim:/preprocess_tb/t_gclock
+run -all
+# Can't move the Now cursor.
+quit -sim
+# End time: 16:47:01 on Oct 30,2018, Elapsed time: 0:01:00
+# Errors: 1, Warnings: 0
+# Compile of preprocess.vhd was successful.
+vsim work.preprocess_tb
+# vsim work.preprocess_tb 
+# Start time: 16:50:00 on Oct 30,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.preprocess_tb(preprocess_tb_behave)
+# Loading work.preprocess(preprocess_behave)
+# Loading work.inverter(inverter_behave)
+# Loading work.norgate(norgate_behave)
+# Loading work.mux(mux_behave)
+add wave -position insertpoint  \
+sim:/preprocess_tb/t_inputs \
+sim:/preprocess_tb/t_fs \
+sim:/preprocess_tb/t_outputs \
+sim:/preprocess_tb/t_load_gen \
+sim:/preprocess_tb/t_clock \
+sim:/preprocess_tb/t_gclock
+run -all
+# Can't move the Now cursor.
+quit -sim
+# End time: 16:51:51 on Oct 30,2018, Elapsed time: 0:01:51
+# Errors: 1, Warnings: 0

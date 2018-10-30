@@ -48,26 +48,26 @@ architecture slice_behave of slice is
   end component norgate;
 
   signal activate: std_logic;
-  signal inv_tbuf: std_logic;
-  signal t_buf: std_logic;
+  signal inv_track_out_buf: std_logic;
+  signal track_out_buf: std_logic;
   signal output_buf: std_logic_vector(3 downto 0);
-  signal tra_in_buf: std_logic;
+  signal track_in_buf: std_logic;
 
 begin
 
-  RST: andgate port map(tin, reset, tra_in_buf);
-  TRA: dff port map(tra_in_buf, gclock, t_buf);
-  INV: inverter port map(t_buf, inv_tbuf);
-  ACT: norgate port map(inv_tbuf, tnext, activate);
+  RST: andgate port map(tin, reset, track_in_buf);
+  TRA: dff port map(track_in_buf, gclock, track_out_buf);
+  INV: inverter port map(track_out_buf, inv_track_out_buf);
+  ACT: norgate port map(inv_track_out_buf, tnext, activate);
 
   GEN_LOGIC: for i in 0 to 3 generate
     FF: dff port map(inputs(i), clock, output_buf(i));
     TG: tgate port map(output_buf(i), activate, fs(i));
   end generate GEN_LOGIC;
 
-  buf_process: process(t_buf, output_buf)
+  buf_process: process(track_out_buf, output_buf)
   begin
-    tout <= t_buf;
+    tout <= track_out_buf;
     outputs <= output_buf;
   end process buf_process;
 

@@ -25,27 +25,58 @@ begin
 
   test_process: process
   begin
+    -- initial
     t_clock <= '0';
     t_gclock <= '0';
     t_inputs <= "0000";
-    t_tin <= '1';
+    t_tin <= '0';
     t_tnext <= '0';
     t_reset <= '1';
     wait for 20 ns;
+    -- cycle the clock once - we should see 0s at output and Zs at F
+    t_clock <= '1';
+    t_gclock <= '1';
+    wait for 20 ns;
+    t_clock <= '0';
+    t_gclock <= '0';
+    wait for 19 ns;
+    -- bring inputs high and cycle the clock - outputs should be high
+    --   no change to F
+    t_inputs <= "1111";
+    wait for 1 ns;
+    t_clock <= '1';
+    t_gclock <= '1';
+    wait for 20 ns;
+    t_clock <= '0';
+    t_gclock <= '0';
+    wait for 19 ns;
+    -- shift a 1 into our track - should see output in F and t_tout = 1
+    t_tin <= '1';
+    wait for 1 ns;
+    t_clock <= '1';
+    t_gclock <= '1';
+    wait for 20 ns;
+    t_clock <= '0';
+    t_gclock <= '0';
+    wait for 19 ns;
+    -- turn t_tnext = 1 -> no more output in F
+    t_tnext <= '1';
+    wait for 1 ns;
+    t_clock <= '1';
+    t_gclock <= '1';
+    wait for 20 ns;
+    t_clock <= '0';
+    t_gclock <= '0';
+    wait for 19 ns;
+    -- finally, test our reset
+    t_reset <= '0';
+    wait for 1 ns;
     t_clock <= '1';
     t_gclock <= '1';
     wait for 20 ns;
     t_clock <= '0';
     t_gclock <= '0';
     wait for 20 ns;
-    t_clock <= '1';
-    t_gclock <= '1';
-    wait for 20 ns;
-    t_clock <= '0';
-    t_gclock <= '0';
-    wait for 20 ns;
-
-
     wait;
     
   end process test_process;

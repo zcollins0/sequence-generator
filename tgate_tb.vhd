@@ -21,21 +21,19 @@ begin
 
   test_process: process
   begin
-  t_in <= '0';
-  t_gate <= '0';
-  wait for 20 ns;    
-  t_in <= '0';
-  t_gate <= '1';
-  wait for 20 ns;    
-  t_in <= '1';
-  t_gate <= '0';
-  wait for 20 ns;    
-  t_in <= '1';
-  t_gate <= '1';
-  wait for 20 ns;  
-
-
-  wait;
+    t_in <= '0';
+    t_gate <= '0';
+    wait for 20 ns;    
+    t_in <= '0';
+    t_gate <= '1';
+    wait for 20 ns;    
+    t_in <= '1';
+    t_gate <= '0';
+    wait for 20 ns;    
+    t_in <= '1';
+    t_gate <= '1';
+    wait for 20 ns;  
+    wait;
     
   end process test_process;
 
