@@ -1,0 +1,73 @@
+/home/collinzy/work/project/tgate_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/collinzy/work/project/tgate_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tgate_tb
+-- Compiling architecture tgate_tb_behave of tgate_tb
+
+} {} {}} /home/collinzy/work/project/inverter.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/collinzy/work/project/inverter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity inverter
+-- Compiling architecture inverter_behave of inverter
+
+} {} {}} /home/collinzy/work/project/nor_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/collinzy/work/project/nor_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nor_tb
+-- Compiling architecture nor_tb_behave of nor_tb
+
+} {} {}} /home/collinzy/work/project/slice.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/collinzy/work/project/slice.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity slice
+-- Compiling architecture slice_behave of slice
+
+} {} {}} /home/collinzy/work/project/norgate.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/collinzy/work/project/norgate.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity norgate
+-- Compiling architecture norgate_behave of norgate
+
+} {} {}} /home/collinzy/work/project/dff.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/collinzy/work/project/dff.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dff
+-- Compiling architecture dff_behave of dff
+
+} {} {}} /home/collinzy/work/project/andgate.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/collinzy/work/project/andgate.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity andgate
+-- Compiling architecture andgate_behave of andgate
+
+} {} {}} /home/collinzy/work/project/tgate.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/collinzy/work/project/tgate.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tgate
+-- Compiling architecture tgate_behave of tgate
+
+} {} {}} /home/collinzy/work/project/slice_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/collinzy/work/project/slice_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity slice_tb
+-- Compiling architecture slice_tb_behave of slice_tb
+
+} {} {}}
