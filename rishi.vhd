@@ -20,9 +20,28 @@ architecture rishi_behave of rishi is
   );
   end component slice;
 
+  component preprocess is
+  port(
+    inputs, fs: in std_logic_vector(3 downto 0);
+    load_gen, clock: in std_logic;
+    outputs: out std_logic_vector(3 downto 0);
+    gclock: out std_logic
+  );
+  end component preprocess;
+
+  signal common_bus: std_logic_vector(3 downto 0);
+  signal track: std_logic := '1';
+  signal gclock: std_logic;
+
 begin
 
+  PRE: preprocess port map(inputs, common_bus, load_gen, clock,
+       outputs, gclock);
 
-
+  rishi_process: process(common_bus)
+  begin
+    fs <= common_bus;
+  end process rishi_process;
 
 end rishi_behave;
+
