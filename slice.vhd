@@ -52,6 +52,7 @@ architecture slice_behave of slice is
   signal track_out_buf: std_logic;
   signal output_buf: std_logic_vector(3 downto 0);
   signal track_in_buf: std_logic;
+  signal f_buf: std_logic_vector(3 downto 0);
 
 begin
 
@@ -62,13 +63,14 @@ begin
 
   GEN_LOGIC: for i in 0 to 3 generate
     FF: dff port map(inputs(i), clock, output_buf(i));
-    TG: tgate port map(output_buf(i), activate, fs(i));
+    TG: tgate port map(output_buf(i), activate, f_buf(i));
   end generate GEN_LOGIC;
 
-  buf_process: process(track_out_buf, output_buf)
+  buf_process: process(track_out_buf, output_buf, f_buf)
   begin
     tout <= track_out_buf;
     outputs <= output_buf;
+    fs <= f_buf;
   end process buf_process;
 
 end slice_behave;
