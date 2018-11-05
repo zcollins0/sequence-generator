@@ -1,238 +1,70 @@
 # Loading project RISHI
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 20:55:17 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/t_inputs \
-sim:/rishi_tb/t_outputs \
-sim:/rishi_tb/t_fs \
-sim:/rishi_tb/t_load_gen \
-sim:/rishi_tb/t_clock \
-sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out
-run -all
-quit -sim
-# End time: 20:56:12 on Oct 30,2018, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 0
-# Compile of tgate.vhd was successful.
-# Compile of rishi_tb.vhd was successful.
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 20:56:54 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/t_inputs \
-sim:/rishi_tb/t_outputs \
-sim:/rishi_tb/t_fs \
-sim:/rishi_tb/t_load_gen \
-sim:/rishi_tb/t_clock \
-sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out
-run -all
-quit -sim
-# End time: 20:57:54 on Oct 30,2018, Elapsed time: 0:01:00
-# Errors: 0, Warnings: 0
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 20:58:24 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-quit -sim
-# End time: 20:58:41 on Oct 30,2018, Elapsed time: 0:00:17
-# Errors: 0, Warnings: 0
-vsim work.slice_tb
-# vsim work.slice_tb 
-# Start time: 20:58:50 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.slice_tb(slice_tb_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/slice_tb/t_inputs \
-sim:/slice_tb/t_outputs \
-sim:/slice_tb/t_fs \
-sim:/slice_tb/t_tin \
-sim:/slice_tb/t_tnext \
-sim:/slice_tb/t_clock \
-sim:/slice_tb/t_gclock \
-sim:/slice_tb/t_reset
-run -all
-add wave -position insertpoint  \
-sim:/slice_tb/t_tout
-restart -f
-run -all
-quit -sim
-# End time: 21:00:58 on Oct 30,2018, Elapsed time: 0:02:08
-# Errors: 0, Warnings: 0
-# Compile of slice.vhd was successful.
-# Compile of slice.vhd was successful.
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 21:02:39 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/t_inputs \
-sim:/rishi_tb/t_outputs \
-sim:/rishi_tb/t_fs \
-sim:/rishi_tb/t_load_gen \
-sim:/rishi_tb/t_clock \
-sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out
-run -all
-quit -sim
-# End time: 21:04:02 on Oct 30,2018, Elapsed time: 0:01:23
-# Errors: 0, Warnings: 0
-# Compile of rishi_tb.vhd was successful.
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 21:04:43 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/t_inputs \
-sim:/rishi_tb/t_outputs \
-sim:/rishi_tb/t_fs \
-sim:/rishi_tb/t_load_gen \
-sim:/rishi_tb/t_clock \
-sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out
-run -all
-quit -sim
-# End time: 21:05:11 on Oct 30,2018, Elapsed time: 0:00:28
-# Errors: 0, Warnings: 0
-vsim work.dff_tb
-# vsim work.dff_tb 
-# Start time: 21:05:35 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.dff_tb(dff_tb_behave)
-# Loading work.dff(dff_behave)
-add wave -position insertpoint  \
-sim:/dff_tb/t_d \
-sim:/dff_tb/t_clock \
-sim:/dff_tb/t_q
-run -all
-quit -sim
-# End time: 21:06:15 on Oct 30,2018, Elapsed time: 0:00:40
-# Errors: 0, Warnings: 0
 # Compile of dff.vhd was successful.
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 21:07:24 on Oct 30,2018
+# Compile of inverter.vhd was successful.
+# Compile of slice.vhd was successful.
+# Compile of tgate.vhd was successful.
+# Compile of andgate.vhd was successful.
+# Compile of norgate.vhd was successful.
+# Compile of slice_tb.vhd was successful.
+# Compile of tgate_tb.vhd was successful.
+# Compile of rishi.vhd was successful.
+# Compile of preprocess.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of andgate_tb.vhd was successful.
+# Compile of dff_tb.vhd was successful.
+# Compile of norgate_tb.vhd was successful.
+# Compile of preprocess_tb.vhd was successful.
+# Compile of rishi_tb.vhd was successful.
+# Compile of inverter_tb.vhd was successful.
+# Compile of mux_tb.vhd was successful.
+# 18 compiles, 0 failed with no errors.
+vsim work.tgate_tb
+# vsim work.tgate_tb 
+# Start time: 14:59:01 on Nov 05,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
+# Loading work.tgate_tb(tgate_tb_behave)
 # Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/t_inputs \
-sim:/rishi_tb/t_outputs \
-sim:/rishi_tb/t_fs \
-sim:/rishi_tb/t_load_gen \
-sim:/rishi_tb/t_clock \
-sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out
-run -all
 quit -sim
-# End time: 21:08:45 on Oct 30,2018, Elapsed time: 0:01:21
+# End time: 14:59:16 on Nov 05,2018, Elapsed time: 0:00:15
 # Errors: 0, Warnings: 0
 # Load canceled
+# Compile of tgate.vhd was successful.
 # Compile of dff.vhd was successful.
+# Compile of inverter.vhd was successful.
+# Compile of slice.vhd was successful.
+# Compile of tgate.vhd was successful.
+# Compile of andgate.vhd was successful.
+# Compile of norgate.vhd was successful.
+# Compile of slice_tb.vhd was successful.
+# Compile of tgate_tb.vhd was successful.
 # Compile of rishi.vhd was successful.
+# Compile of preprocess.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of andgate_tb.vhd was successful.
+# Compile of dff_tb.vhd was successful.
+# Compile of norgate_tb.vhd was successful.
+# Compile of preprocess_tb.vhd was successful.
+# Compile of rishi_tb.vhd was successful.
+# Compile of inverter_tb.vhd was successful.
+# Compile of mux_tb.vhd was successful.
+# 18 compiles, 0 failed with no errors.
 vsim work.rishi_tb
 # vsim work.rishi_tb 
-# Start time: 21:12:06 on Oct 30,2018
+# Start time: 14:59:51 on Nov 05,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.rishi_tb(rishi_tb_behave)
 # Loading work.rishi(rishi_behave)
 # Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
 # Loading work.mux(mux_behave)
 # Loading work.slice(slice_behave)
 # Loading work.andgate(andgate_behave)
 # Loading work.dff(dff_behave)
+# Loading work.inverter(inverter_behave)
+# Loading work.norgate(norgate_behave)
 # Loading work.tgate(tgate_behave)
 add wave -position insertpoint  \
 sim:/rishi_tb/t_inputs \
@@ -241,115 +73,10 @@ sim:/rishi_tb/t_fs \
 sim:/rishi_tb/t_load_gen \
 sim:/rishi_tb/t_clock \
 sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out
+sim:/rishi_tb/t_track
 run -all
 quit -sim
-# End time: 21:12:48 on Oct 30,2018, Elapsed time: 0:00:42
-# Errors: 0, Warnings: 0
-# Compile of rishi.vhd was successful.
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 21:16:06 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/t_inputs \
-sim:/rishi_tb/t_outputs \
-sim:/rishi_tb/t_fs \
-sim:/rishi_tb/t_load_gen \
-sim:/rishi_tb/t_clock \
-sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out
-run -all
-# Break key hit
-quit -sim
-# End time: 21:17:19 on Oct 30,2018, Elapsed time: 0:01:13
-# Errors: 0, Warnings: 0
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 21:19:22 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/RIS/n \
-sim:/rishi_tb/RIS/inputs \
-sim:/rishi_tb/RIS/load_gen \
-sim:/rishi_tb/RIS/clock \
-sim:/rishi_tb/RIS/reset \
-sim:/rishi_tb/RIS/track \
-sim:/rishi_tb/RIS/outputs \
-sim:/rishi_tb/RIS/fs \
-sim:/rishi_tb/RIS/track_out \
-sim:/rishi_tb/RIS/common_bus \
-sim:/rishi_tb/RIS/common_bus_value \
-sim:/rishi_tb/RIS/gclock \
-sim:/rishi_tb/RIS/O \
-sim:/rishi_tb/RIS/ts \
-sim:/rishi_tb/RIS/output_buf \
-sim:/rishi_tb/RIS/preprocess_out \
-sim:/rishi_tb/RIS/track_out_buf
-run -all
-# Can't move the Now cursor.
-quit -sim
-# End time: 21:22:05 on Oct 30,2018, Elapsed time: 0:02:43
-# Errors: 1, Warnings: 0
-# Compile of rishi.vhd failed with 3 errors.
-# Compile of rishi.vhd was successful.
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 21:24:22 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-run -all
-restart -f
-add wave -position insertpoint  \
-sim:/rishi_tb/t_inputs \
-sim:/rishi_tb/t_outputs \
-sim:/rishi_tb/t_fs \
-sim:/rishi_tb/t_load_gen \
-sim:/rishi_tb/t_clock \
-sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out \
-sim:/rishi_tb/n
-run -all
-quit -sim
-# End time: 21:25:48 on Oct 30,2018, Elapsed time: 0:01:26
+# End time: 15:01:12 on Nov 05,2018, Elapsed time: 0:01:21
 # Errors: 0, Warnings: 0
 # Compile of dff.vhd was successful.
 # Compile of inverter.vhd was successful.
@@ -372,19 +99,19 @@ quit -sim
 # 18 compiles, 0 failed with no errors.
 vsim work.rishi_tb
 # vsim work.rishi_tb 
-# Start time: 21:26:49 on Oct 30,2018
+# Start time: 15:05:04 on Nov 05,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.rishi_tb(rishi_tb_behave)
 # Loading work.rishi(rishi_behave)
 # Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
 # Loading work.mux(mux_behave)
 # Loading work.slice(slice_behave)
 # Loading work.andgate(andgate_behave)
 # Loading work.dff(dff_behave)
+# Loading work.inverter(inverter_behave)
+# Loading work.norgate(norgate_behave)
 # Loading work.tgate(tgate_behave)
 add wave -position insertpoint  \
 sim:/rishi_tb/t_inputs \
@@ -393,99 +120,8 @@ sim:/rishi_tb/t_fs \
 sim:/rishi_tb/t_load_gen \
 sim:/rishi_tb/t_clock \
 sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out \
-sim:/rishi_tb/n
-run -all
-restart -f
-run -all
-# Break key hit
-quit -sim
-# End time: 21:28:56 on Oct 30,2018, Elapsed time: 0:02:07
-# Errors: 0, Warnings: 0
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 21:29:12 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/RIS/n \
-sim:/rishi_tb/RIS/inputs \
-sim:/rishi_tb/RIS/load_gen \
-sim:/rishi_tb/RIS/clock \
-sim:/rishi_tb/RIS/reset \
-sim:/rishi_tb/RIS/track \
-sim:/rishi_tb/RIS/outputs \
-sim:/rishi_tb/RIS/fs \
-sim:/rishi_tb/RIS/track_out \
-sim:/rishi_tb/RIS/common_bus \
-sim:/rishi_tb/RIS/common_bus_value \
-sim:/rishi_tb/RIS/gclock \
-sim:/rishi_tb/RIS/O \
-sim:/rishi_tb/RIS/ts \
-sim:/rishi_tb/RIS/output_buf \
-sim:/rishi_tb/RIS/preprocess_out
+sim:/rishi_tb/t_track
 run -all
 quit -sim
-# End time: 21:33:05 on Oct 30,2018, Elapsed time: 0:03:53
-# Errors: 0, Warnings: 0
-# Compile of dff.vhd was successful.
-# Compile of inverter.vhd was successful.
-# Compile of slice.vhd was successful.
-# Compile of tgate.vhd was successful.
-# Compile of andgate.vhd was successful.
-# Compile of norgate.vhd was successful.
-# Compile of slice_tb.vhd was successful.
-# Compile of tgate_tb.vhd was successful.
-# Compile of rishi.vhd was successful.
-# Compile of preprocess.vhd was successful.
-# Compile of mux.vhd was successful.
-# Compile of andgate_tb.vhd was successful.
-# Compile of dff_tb.vhd was successful.
-# Compile of norgate_tb.vhd was successful.
-# Compile of preprocess_tb.vhd was successful.
-# Compile of rishi_tb.vhd was successful.
-# Compile of inverter_tb.vhd was successful.
-# Compile of mux_tb.vhd was successful.
-# 18 compiles, 0 failed with no errors.
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 21:38:04 on Oct 30,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/t_inputs \
-sim:/rishi_tb/t_outputs \
-sim:/rishi_tb/t_fs \
-sim:/rishi_tb/t_load_gen \
-sim:/rishi_tb/t_clock \
-sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out \
-sim:/rishi_tb/n
-run -all
-quit -sim
-# End time: 21:38:58 on Oct 30,2018, Elapsed time: 0:00:54
+# End time: 15:05:41 on Nov 05,2018, Elapsed time: 0:00:37
 # Errors: 0, Warnings: 0

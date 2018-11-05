@@ -13,9 +13,9 @@ begin
   mux_process: process(a, b, gate)
   begin
     if (gate = '1') then
-      output <= b;
+      output <= not a;
     else
-      output <= a;
+      output <= not b;
     end if;
   end process mux_process;
 end mux_behave;

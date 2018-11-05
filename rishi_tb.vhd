@@ -13,15 +13,15 @@ architecture rishi_tb_behave of rishi_tb is
   port(
     inputs: in std_logic_vector(3 downto 0);
     load_gen, clock, reset, track: in std_logic;
-    outputs, fs: out std_logic_vector(3 downto 0);
-    track_out: out std_logic
+    outputs, fs: out std_logic_vector(4 downto 0)
   );
   end component rishi;
 
   constant n: integer := 3;
 
-  signal t_inputs, t_outputs, t_fs: std_logic_vector(3 downto 0);
-  signal t_load_gen, t_clock, t_reset, t_track, t_track_out: std_logic;
+  signal t_inputs: std_logic_vector(3 downto 0);
+  signal t_outputs, t_fs: std_logic_vector(4 downto 0);
+  signal t_load_gen, t_clock, t_reset, t_track: std_logic;
 
 begin
 
@@ -33,14 +33,15 @@ begin
              reset     => t_reset,
              track     => t_track,
              outputs   => t_outputs,
-             fs        => t_fs,
-             track_out => t_track_out);
+             fs        => t_fs);
 
   test_process: process
   begin
+    t_inputs <= "0000";
     t_clock <= '0';
     t_load_gen <= '0';
     t_reset <= '0';
+    t_track <= '0';
     wait for 20 ns;
     t_clock <= '1';
     wait for 19 ns;
@@ -51,7 +52,7 @@ begin
     t_clock <= '0';
     wait for 19 ns;
     t_inputs <= "0000";
-    t_track <= '1';
+    t_track <= '0';
     wait for 1 ns;
     t_clock <= '1';
     wait for 20 ns;
