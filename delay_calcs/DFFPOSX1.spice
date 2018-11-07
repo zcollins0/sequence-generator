@@ -1,0 +1,67 @@
+* SPICE3 file created from DFFPOSX1.ext - technology: scmos
+
+.include ~/model_t36s.sp
+.option scale=0.3u
+.param vdd=5V
+
+vdd vdd 0 vdd
+
+VD d 0 PWL(0 5V 10n 5V 25n 5V 25.1n 0V)
+VC clk 0 PWL(0 0 10n 0 11n 5V 20n 5V 20.1n 0 30n 0 30.1n 5V 40n 5V 40.1n 0)
+.options post=2
+.tran 1p 50n
+
+M1000 vdd a_6_33# clk vdd pfet w=40 l=2
++  ad=650 pd=286 as=200 ps=90
+M1001 a_17_74# d vdd vdd pfet w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1002 a_22_6# a_6_33# a_17_74# vdd pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1003 a_31_74# clk a_22_6# vdd pfet w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1004 vdd a_34_4# a_31_74# vdd pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 a_34_4# a_22_6# vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1006 a_61_74# a_34_4# vdd vdd pfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1007 a_66_6# clk a_61_74# vdd pfet w=20 l=2
++  ad=150 pd=56 as=0 ps=0
+M1008 a_76_84# a_6_33# a_66_6# vdd pfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1009 vdd q a_76_84# vdd pfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 gnd a_6_33# clk Gnd nfet w=20 l=2
++  ad=340 pd=168 as=100 ps=50
+M1011 q a_66_6# vdd vdd pfet w=40 l=2
++  ad=200 pd=90 as=0 ps=0
+M1012 a_17_6# d gnd Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1013 a_22_6# clk a_17_6# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1014 a_31_6# a_6_33# a_22_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1015 gnd a_34_4# a_31_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 a_34_4# a_22_6# gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1017 a_61_6# a_34_4# gnd Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1018 a_66_6# a_6_33# a_61_6# Gnd nfet w=10 l=2
++  ad=80 pd=36 as=0 ps=0
+M1019 a_76_6# clk a_66_6# Gnd nfet w=10 l=2
++  ad=30 pd=26 as=0 ps=0
+M1020 gnd q a_76_6# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1021 q a_66_6# gnd Gnd nfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+C0 vdd q 2.20fF
+C1 clk vdd 4.88fF
+C2 vdd a_22_6# 2.40fF
+C3 vdd a_34_4# 2.48fF
+C4 vdd a_6_33# 2.41fF
+C5 gnd Gnd 7.11fF
+C6 a_66_6# Gnd 2.15fF
+C7 q Gnd 4.11fF
+C8 a_6_33# Gnd 4.81fF
+C9 vdd Gnd 23.17fF

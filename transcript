@@ -1,58 +1,7 @@
 # Loading project RISHI
-# Compile of dff.vhd was successful.
-# Compile of inverter.vhd was successful.
-# Compile of slice.vhd was successful.
-# Compile of tgate.vhd was successful.
-# Compile of andgate.vhd was successful.
-# Compile of norgate.vhd was successful.
-# Compile of slice_tb.vhd was successful.
-# Compile of tgate_tb.vhd was successful.
-# Compile of rishi.vhd was successful.
-# Compile of preprocess.vhd was successful.
-# Compile of mux.vhd was successful.
-# Compile of andgate_tb.vhd was successful.
-# Compile of dff_tb.vhd was successful.
-# Compile of norgate_tb.vhd was successful.
-# Compile of preprocess_tb.vhd was successful.
-# Compile of rishi_tb.vhd was successful.
-# Compile of inverter_tb.vhd was successful.
-# Compile of mux_tb.vhd was successful.
-# 18 compiles, 0 failed with no errors.
-vsim work.tgate_tb
-# vsim work.tgate_tb 
-# Start time: 14:59:01 on Nov 05,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tgate_tb(tgate_tb_behave)
-# Loading work.tgate(tgate_behave)
-quit -sim
-# End time: 14:59:16 on Nov 05,2018, Elapsed time: 0:00:15
-# Errors: 0, Warnings: 0
-# Load canceled
-# Compile of tgate.vhd was successful.
-# Compile of dff.vhd was successful.
-# Compile of inverter.vhd was successful.
-# Compile of slice.vhd was successful.
-# Compile of tgate.vhd was successful.
-# Compile of andgate.vhd was successful.
-# Compile of norgate.vhd was successful.
-# Compile of slice_tb.vhd was successful.
-# Compile of tgate_tb.vhd was successful.
-# Compile of rishi.vhd was successful.
-# Compile of preprocess.vhd was successful.
-# Compile of mux.vhd was successful.
-# Compile of andgate_tb.vhd was successful.
-# Compile of dff_tb.vhd was successful.
-# Compile of norgate_tb.vhd was successful.
-# Compile of preprocess_tb.vhd was successful.
-# Compile of rishi_tb.vhd was successful.
-# Compile of inverter_tb.vhd was successful.
-# Compile of mux_tb.vhd was successful.
-# 18 compiles, 0 failed with no errors.
 vsim work.rishi_tb
 # vsim work.rishi_tb 
-# Start time: 14:59:51 on Nov 05,2018
+# Start time: 18:19:14 on Nov 06,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -76,8 +25,40 @@ sim:/rishi_tb/t_reset \
 sim:/rishi_tb/t_track
 run -all
 quit -sim
-# End time: 15:01:12 on Nov 05,2018, Elapsed time: 0:01:21
+# End time: 18:21:33 on Nov 06,2018, Elapsed time: 0:02:19
 # Errors: 0, Warnings: 0
+# Compile of rishi.vhd was successful.
+# Compile of rishi_tb.vhd was successful.
+vsim work.rishi_tb
+# vsim work.rishi_tb 
+# Start time: 18:55:56 on Nov 06,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.rishi_tb(rishi_tb_behave)
+# Loading work.rishi(rishi_behave)
+# Loading work.preprocess(preprocess_behave)
+# Loading work.mux(mux_behave)
+# Loading work.slice(slice_behave)
+# Loading work.andgate(andgate_behave)
+# Loading work.dff(dff_behave)
+# Loading work.inverter(inverter_behave)
+# Loading work.norgate(norgate_behave)
+# Loading work.tgate(tgate_behave)
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/rishi_tb/t_inputs \
+sim:/rishi_tb/t_outputs \
+sim:/rishi_tb/t_fs \
+sim:/rishi_tb/t_load_gen \
+sim:/rishi_tb/t_clock \
+sim:/rishi_tb/t_reset \
+sim:/rishi_tb/t_track
+run -all
+quit -sim
+# End time: 18:56:34 on Nov 06,2018, Elapsed time: 0:00:38
+# Errors: 1, Warnings: 0
 # Compile of dff.vhd was successful.
 # Compile of inverter.vhd was successful.
 # Compile of slice.vhd was successful.
@@ -99,7 +80,7 @@ quit -sim
 # 18 compiles, 0 failed with no errors.
 vsim work.rishi_tb
 # vsim work.rishi_tb 
-# Start time: 15:05:04 on Nov 05,2018
+# Start time: 18:57:52 on Nov 06,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -123,5 +104,6 @@ sim:/rishi_tb/t_reset \
 sim:/rishi_tb/t_track
 run -all
 quit -sim
-# End time: 15:05:41 on Nov 05,2018, Elapsed time: 0:00:37
+# End time: 18:59:02 on Nov 06,2018, Elapsed time: 0:01:10
 # Errors: 0, Warnings: 0
+# Compile of rishi.vhd was successful.

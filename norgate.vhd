@@ -12,6 +12,6 @@ architecture norgate_behave of norgate is
 begin
   norgate_process: process(a, b)
   begin
-    output <= a nor b;
+    output <= a nor b after 367 ps;
   end process norgate_process;
 end norgate_behave;

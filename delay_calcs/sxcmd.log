@@ -1,0 +1,20 @@
+### Custom WaveView ADV log file, revision N-2017.12-SP1-1 (build Apr 03, ) ###
+### created at 17:23:06 on Tue Nov  6 2018 (Linux AMD64) ###
+### Host Name: vlsi-access-0.eecs.uc.edu   User ID: collinzy   PID: 24838   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+sx_open_sim_file_read {DFFPOSX1.tr0}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:DFFPOSX1.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:DFFPOSX1.tr0(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:DFFPOSX1.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:DFFPOSX1.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q)} 18
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q)} 18
+wv_close_window {Custom WaveView} 
+wv_move_window {Confirmation} {} 869 461
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/home/collinzy/.cx_hostport/.cx_hostport_vlsi-access-0.eecs.uc.edu_24838'.

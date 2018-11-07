@@ -12,6 +12,6 @@ architecture andgate_behave of andgate is
 begin
   andgate_process: process(a, b)
   begin
-    output <= a and b;
+    output <= a and b after 432 ps;
   end process andgate_process;
 end andgate_behave;

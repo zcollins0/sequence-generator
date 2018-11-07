@@ -1,0 +1,28 @@
+* SPICE3 file created from BUFX4.ext - technology: scmos
+.include ~/model_t36s.sp
+.option scale=0.3u
+.param vdd=5V
+
+vdd vdd 0 vdd
+
+Va a 0 PWL(0 0V 10n 0V 10.1n 5V 25n 5V 25.1n 0V)
+.options post=2
+.tran 1p 50n
+
+
+M1000 vdd a a_2_6# vdd pfet w=30 l=2
++  ad=430 pd=182 as=150 ps=70
+M1001 y a_2_6# vdd vdd pfet w=40 l=2
++  ad=240 pd=92 as=0 ps=0
+M1002 vdd a_2_6# y vdd pfet w=40 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 gnd a a_2_6# Gnd nfet w=15 l=2
++  ad=215 pd=102 as=75 ps=40
+M1004 y a_2_6# gnd Gnd nfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1005 gnd a_2_6# y Gnd nfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 vdd a_2_6# 2.00fF
+C1 gnd Gnd 2.85fF
+C2 a_2_6# Gnd 2.40fF
+C3 vdd Gnd 9.84fF

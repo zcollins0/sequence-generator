@@ -1,0 +1,8 @@
+The Stabdard cell library and Pad Frame provided contains Hi-ESD 
+(Electrostatic Discharge Damage) cells that include a poly-silicon 
+series resistor. During extraction, resistor is interpreted as fet 
+which has to be converted back to 2-terminal resistor using a script 
+provided.
+
+Usage:
+/home/..../IIT_LIB/src/Scripts/iitcells_polyresfix *.ext

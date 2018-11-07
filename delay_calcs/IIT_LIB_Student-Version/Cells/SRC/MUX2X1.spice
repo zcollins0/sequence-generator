@@ -1,0 +1,28 @@
+* SPICE3 file created from MUX2X1.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 vdd S a_2_10# vdd pfet w=20 l=2
++  ad=408 pd=182 as=100 ps=50
+M1001 a_17_50# B vdd vdd pfet w=40 l=2
++  ad=120 pd=86 as=0 ps=0
+M1002 Y S a_17_50# vdd pfet w=40 l=2
++  ad=248 pd=100 as=0 ps=0
+M1003 a_30_54# a_2_10# Y vdd pfet w=40 l=2
++  ad=120 pd=86 as=0 ps=0
+M1004 vdd A a_30_54# vdd pfet w=40 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 gnd S a_2_10# Gnd nfet w=10 l=2
++  ad=206 pd=102 as=50 ps=30
+M1006 a_17_10# B gnd Gnd nfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1007 Y a_2_10# a_17_10# Gnd nfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1008 a_30_10# S Y Gnd nfet w=20 l=2
++  ad=60 pd=46 as=0 ps=0
+M1009 gnd A a_30_10# Gnd nfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 a_2_10# vdd 2.01fF
+C1 gnd Gnd 3.63fF
+C2 a_2_10# Gnd 2.29fF
+C3 vdd Gnd 12.74fF

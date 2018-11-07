@@ -1,0 +1,17 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12-SP2-1 linux64"
+* "format" "HSP"
+* "rundate" "16:29:04 11/06/2018 "
+* "netlist" "BUFX4.spice "
+* "runtitle" "* spice3 file created from bufx4.ext - technology: scmos"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ a_2_6# =   5.0000        
++ vdd =   5.0000        
++ y =   5.6804n       
+***   END: Saved Operating Point ***                     

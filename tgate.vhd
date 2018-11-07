@@ -13,7 +13,7 @@ begin
   tgate_process: process(input, gate)
   begin
     if (gate = '1') then
-      output <= not input after 1 ps;
+      output <= not input after 479 ps;
     else
       output <= 'Z';
     end if;

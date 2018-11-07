@@ -1,0 +1,11 @@
+IIT_Frame_PR.mag is a 40 pin padframe with 38 bidirectional pads, one vdd 
+and one gnd pads. The area of the pad frame is 5000x5000 lambda sq and 
+2600x2600 lambda sq design area. There is a poly ring added to avoid 
+fabrication errors.
+
+** Please DO NOT MODIFY the pad frame **
+
+Connections to pads::
+Input pad: Connect OEN, DO to ground. DI follows Pad. DIB left unconnected.
+Output pad: Connect OEN to VDD, DI to Ground. Pad follows DO. DIB left unconnected.
+Unused Pads: Connect OEN, DO, DI to Gnd. DIB left unconnected.

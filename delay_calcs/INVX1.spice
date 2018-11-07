@@ -1,0 +1,16 @@
+* SPICE3 file created from INVX1.ext - technology: scmos
+.include ~/model_t36s.sp
+.option scale=0.3u
+.param vdd=5V
+
+vdd vdd 0 vdd
+
+Va a 0 PWL(0 0V 10n 0 10.1n 5V 25n 5V 25.1n 0V)
+.options post=2
+.tran 1p 50n
+
+M1000 Y A vdd vdd pfet w=20 l=2
++  ad=100 pd=50 as=100 ps=50
+M1001 Y A gnd Gnd nfet w=10 l=2
++  ad=50 pd=30 as=50 ps=30
+C0 vdd Gnd 7.45fF

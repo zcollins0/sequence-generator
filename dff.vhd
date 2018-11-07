@@ -13,7 +13,7 @@ begin
   dff_process: process(clock)
   begin
     if rising_edge(clock) then
-      q <= d;
+      q <= d after 478 ps;
     end if;
   end process dff_process;
 end dff_behave;

@@ -1,0 +1,60 @@
+This directory contains Standard Cells developed by IIT for AMI C5 
+0.5u Process. There are 28 cells in the library. Some basic 
+information about the cells are provided below.
+
+** Please DO NOT MODIFY these cells **
+
+Cell            Dimensions      I/O             Tr Cnt  Function
+-----------------------------------------------------------------------
+
+AND2X1          108x48          A;B/Y           3;3     Y=AB
+
+AND2X2          108x48          A;B/Y           3;3     Y=AB
+
+AOI21X1         108x46          A;B;C/Y         3;3     Y=((AB)+C)'
+
+AOI22X1         108x54          A;B;C;D/Y       4;4     Y=((AB)+(CD))'
+
+BUFX2           108x33          A/Y             2;2     Y=A
+
+BUFX4           108x46          A/Y             2;2     Y=A
+
+DFFNEGX1        108x112         CLK;D/Q;Qbar    11;11   DFF, NegEdge
+
+DFFPOSX1        108x112         CLK;D/Q;Qbar    11;11   DFF, PosEdge
+
+FAX1            108x131         A;B;C/YS;YC     13;13   FAdder
+
+FILL            108x24          --              --      Filler cell
+
+HAX1            108x89          A;B/YS          6;6     HAdder
+
+INVX1           108x35          A/Y             1;1     Y=A'
+
+INVX2           108x35          A/Y             1;1     Y=A'
+
+INVX4           108x37          A/Y             1;1     Y=A'
+
+INVX8           108x54          A/Y             1;1     Y=A'
+
+MUX2X1          108x58          S;A;B/Y         4;4     Y=S'A+SB
+
+NAND2X1         108x40          A;B/Y           2;2     Y=(AB)'
+
+NAND3X1         108x48          A;B;C/Y         3;3     Y=(ABC)'
+
+OAI21X1         108x42          A;B;C/Y         3;3     Y=((A+B)C)'
+
+OAI22X1         108x54          A;B;C;D/Y       4;4     Y=((A+B)(C+D))'
+
+OR2X1           108x48          A;B/Y           3;3     Y=(A+B)
+
+OR2X2           108x42          A;B/Y           3;3     Y=(A+B)
+
+TBUFX1          108x47          EN;A/Y          3;3     Y=(EN.A')
+
+TBUFX2          108x65          EN;A/Y          3;3     Y=(EN.A')
+
+XOR2X1          108x72          A;B/Y           5;5     Y=A'B+AB'
+
+XNOR2X1         108x72          A;B/Y           5;5     Y=(A'B+AB')'
