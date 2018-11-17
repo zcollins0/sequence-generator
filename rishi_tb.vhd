@@ -38,6 +38,7 @@ begin
 
   test_process: process
   begin
+    t_inputs <= "0000";
     t_clock <= '0';
     t_load_gen <= '0';
     t_reset <= '0';
@@ -50,7 +51,6 @@ begin
     wait for 20 ns;
     t_clock <= '0';
     wait for 19 ns;
-    t_inputs <= "0000";
     t_track <= '1';
     wait for 1 ns;
     t_clock <= '1';

@@ -12,6 +12,6 @@ architecture inverter_behave of inverter is
 begin
   inverter_process: process(input)
   begin
-    output <= not input;
+    output <= not input after 222 ps;
   end process inverter_process;
 end inverter_behave;

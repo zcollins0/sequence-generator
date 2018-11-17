@@ -84,7 +84,7 @@ begin
     --    exit common_bus_loop;
     --  end if;
     --end loop common_bus_loop;
-    fs <= common_bus_value;
+    fs <= common_bus_value after 1436 ps;
     outputs <= output_buf;
     track_out <= ts(n-1);
   end process rishi_process;

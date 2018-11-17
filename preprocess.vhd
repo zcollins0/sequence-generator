@@ -42,7 +42,7 @@ begin
   GCLK: norgate port map(inv_clock, load_gen, gclock);
   
   GEN_MUXES: for i in 0 to 3 generate
-    MX: mux port map(inputs(i), fs(i), load_gen, output_buf(i));
+    MX: mux port map(fs(i), inputs(i), load_gen, output_buf(i));
   end generate GEN_MUXES;
 
   preprocess_process:  process(output_buf)

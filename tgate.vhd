@@ -13,9 +13,9 @@ begin
   tgate_process: process(input, gate)
   begin
     if (gate = '1') then
-      output <= input after 1 ps;
+      output <= not input after 479 ps;
     else
-      output <= 'Z';
+      output <= 'Z' after 1 ps;
     end if;
   end process tgate_process;
 end tgate_behave;
