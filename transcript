@@ -1,68 +1,145 @@
 # Loading project RISHI
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 12:09:59 on Nov 17,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/RIS/n \
-sim:/rishi_tb/RIS/inputs \
-sim:/rishi_tb/RIS/load_gen \
-sim:/rishi_tb/RIS/clock \
-sim:/rishi_tb/RIS/reset \
-sim:/rishi_tb/RIS/track \
-sim:/rishi_tb/RIS/outputs \
-sim:/rishi_tb/RIS/fs \
-sim:/rishi_tb/RIS/track_out \
-sim:/rishi_tb/RIS/common_bus_value \
-sim:/rishi_tb/RIS/gclock \
-sim:/rishi_tb/RIS/O \
-sim:/rishi_tb/RIS/ts \
-sim:/rishi_tb/RIS/output_buf \
-sim:/rishi_tb/RIS/preprocess_out
-run -all
-quit -sim
-# End time: 12:11:44 on Nov 17,2018, Elapsed time: 0:01:45
+vlog -work work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 12:54:57 on Nov 17,2018
+# vlog -reportprogress 300 -work work -refresh -force_refresh 
+# -- Skipping entity andgate
+# -- Skipping entity andgate_tb
+# -- Skipping entity dff
+# -- Skipping entity dff_tb
+# -- Skipping entity inverter
+# -- Skipping entity inverter_tb
+# -- Skipping entity mux
+# -- Skipping entity mux_tb
+# -- Skipping entity nor_tb
+# -- Skipping entity norgate
+# -- Skipping entity norgate_tb
+# -- Skipping entity preprocess
+# -- Skipping entity preprocess_tb
+# -- Skipping entity rishi
+# -- Skipping entity rishi_tb
+# -- Skipping entity slice
+# -- Skipping entity slice_tb
+# -- Skipping entity tgate
+# -- Skipping entity tgate_tb
+# End time: 12:54:57 on Nov 17,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Compile of tgate.vhd was successful.
-vsim work.rishi_tb
-# vsim work.rishi_tb 
-# Start time: 12:12:42 on Nov 17,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.rishi_tb(rishi_tb_behave)
-# Loading work.rishi(rishi_behave)
-# Loading work.preprocess(preprocess_behave)
-# Loading work.inverter(inverter_behave)
-# Loading work.norgate(norgate_behave)
-# Loading work.mux(mux_behave)
-# Loading work.slice(slice_behave)
-# Loading work.andgate(andgate_behave)
-# Loading work.dff(dff_behave)
-# Loading work.tgate(tgate_behave)
-add wave -position insertpoint  \
-sim:/rishi_tb/t_inputs \
-sim:/rishi_tb/t_outputs \
-sim:/rishi_tb/t_fs \
-sim:/rishi_tb/t_load_gen \
-sim:/rishi_tb/t_clock \
-sim:/rishi_tb/t_reset \
-sim:/rishi_tb/t_track \
-sim:/rishi_tb/t_track_out \
-sim:/rishi_tb/n
-run -all
-quit -sim
-# End time: 12:13:15 on Nov 17,2018, Elapsed time: 0:00:33
+vcom -work work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 12:54:57 on Nov 17,2018
+# vcom -reportprogress 300 -work work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andgate
+# -- Compiling architecture andgate_behave of andgate
+# -- Compiling entity andgate_tb
+# -- Compiling architecture andgate_tb_behave of andgate_tb
+# -- Compiling entity dff
+# -- Compiling architecture dff_behave of dff
+# -- Compiling entity dff_tb
+# -- Compiling architecture dff_tb_behave of dff_tb
+# -- Compiling entity inverter
+# -- Compiling architecture inverter_behave of inverter
+# -- Compiling entity inverter_tb
+# -- Compiling architecture inverter_tb_behave of inverter_tb
+# -- Compiling entity mux
+# -- Compiling architecture mux_behave of mux
+# -- Compiling entity mux_tb
+# -- Compiling architecture mux_tb_behave of mux_tb
+# -- Compiling entity nor_tb
+# -- Compiling architecture nor_tb_behave of nor_tb
+# -- Compiling entity norgate
+# -- Compiling architecture norgate_behave of norgate
+# -- Compiling entity norgate_tb
+# -- Compiling architecture norgate_tb_behave of norgate_tb
+# -- Compiling entity preprocess
+# -- Compiling architecture preprocess_behave of preprocess
+# -- Compiling entity preprocess_tb
+# -- Compiling architecture preprocess_tb_behave of preprocess_tb
+# -- Compiling entity rishi
+# -- Compiling architecture rishi_behave of rishi
+# -- Compiling entity rishi_tb
+# -- Compiling architecture rishi_tb_behave of rishi_tb
+# -- Compiling entity slice
+# -- Compiling architecture slice_behave of slice
+# -- Compiling entity slice_tb
+# -- Compiling architecture slice_tb_behave of slice_tb
+# -- Compiling entity tgate
+# -- Compiling architecture tgate_behave of tgate
+# -- Compiling entity tgate_tb
+# -- Compiling architecture tgate_tb_behave of tgate_tb
+# End time: 12:54:58 on Nov 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -work work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 12:55:08 on Nov 17,2018
+# vlog -reportprogress 300 -work work -refresh -force_refresh 
+# -- Skipping entity andgate
+# -- Skipping entity andgate_tb
+# -- Skipping entity dff
+# -- Skipping entity dff_tb
+# -- Skipping entity inverter
+# -- Skipping entity inverter_tb
+# -- Skipping entity mux
+# -- Skipping entity mux_tb
+# -- Skipping entity nor_tb
+# -- Skipping entity norgate
+# -- Skipping entity norgate_tb
+# -- Skipping entity preprocess
+# -- Skipping entity preprocess_tb
+# -- Skipping entity rishi
+# -- Skipping entity rishi_tb
+# -- Skipping entity slice
+# -- Skipping entity slice_tb
+# -- Skipping entity tgate
+# -- Skipping entity tgate_tb
+# End time: 12:55:08 on Nov 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 12:55:08 on Nov 17,2018
+# vcom -reportprogress 300 -work work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andgate
+# -- Compiling architecture andgate_behave of andgate
+# -- Compiling entity andgate_tb
+# -- Compiling architecture andgate_tb_behave of andgate_tb
+# -- Compiling entity dff
+# -- Compiling architecture dff_behave of dff
+# -- Compiling entity dff_tb
+# -- Compiling architecture dff_tb_behave of dff_tb
+# -- Compiling entity inverter
+# -- Compiling architecture inverter_behave of inverter
+# -- Compiling entity inverter_tb
+# -- Compiling architecture inverter_tb_behave of inverter_tb
+# -- Compiling entity mux
+# -- Compiling architecture mux_behave of mux
+# -- Compiling entity mux_tb
+# -- Compiling architecture mux_tb_behave of mux_tb
+# -- Compiling entity nor_tb
+# -- Compiling architecture nor_tb_behave of nor_tb
+# -- Compiling entity norgate
+# -- Compiling architecture norgate_behave of norgate
+# -- Compiling entity norgate_tb
+# -- Compiling architecture norgate_tb_behave of norgate_tb
+# -- Compiling entity preprocess
+# -- Compiling architecture preprocess_behave of preprocess
+# -- Compiling entity preprocess_tb
+# -- Compiling architecture preprocess_tb_behave of preprocess_tb
+# -- Compiling entity rishi
+# -- Compiling architecture rishi_behave of rishi
+# -- Compiling entity rishi_tb
+# -- Compiling architecture rishi_tb_behave of rishi_tb
+# -- Compiling entity slice
+# -- Compiling architecture slice_behave of slice
+# -- Compiling entity slice_tb
+# -- Compiling architecture slice_tb_behave of slice_tb
+# -- Compiling entity tgate
+# -- Compiling architecture tgate_behave of tgate
+# -- Compiling entity tgate_tb
+# -- Compiling architecture tgate_tb_behave of tgate_tb
+# End time: 12:55:08 on Nov 17,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
